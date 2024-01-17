@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login form</title>
+        <style>
+            input[type=text]:focus{
+                background-color: rgb(192, 225, 236);
+              }
+            input[type=submit],input[type=reset]{
+                background-color: green;
+                color:white;
+                padding:8px 17px;
+                border:none;
+            }
+            h1{
+                background-color:palevioletred;
+                text-align: center;
+             }
+            body{
+                background-color:skyblue;
+                background-image: url("photo.webp");
+                
+                
+            }
+            table{
+                border:2px  solid;
+                padding:10px; 
+                background-color: rgb(224, 238, 250);
+                
+            } 
+        </style>
+    </head>
+    <body>
+        <h1>LOGIN FORM</h1>
+        <form action="Registration.php"  method="get" >
+        <table text align="center">
+            <tbody>
+            <tr><td><label>Name:</label></td><td> <input type="text" name="uname"/></td></tr>
+            <tr><td><label>Father's Name:</label></td><td> <input type="text" name="fname"/></td></tr>
+            <tr><td><label> Mother's Name:</label></td><td> <input type="text" name="mname"/></td></tr>
+            <tr><td><label>Aadhar Card No.</label></td><td> <input type="number" name="aadhar"/></td></tr>
+            <tr><td><label>Gender</label></td>
+            <td> <input type="radio" name="gender" value="Male"/><label>Male</label>
+             <input type="radio" name="gender" value="Female"/><label>Female</label>
+            <input type="radio" name="gender" value="Other"/><label>Any Other</label></td></tr>
+            <tr><td><label>Phone No.</label></td><td> <input type="number" name="phone"/></td></tr>
+            <tr><td><label>Date Of Birth:</label></td><td> <input type="date" name="dob"/></td></tr>
+            <tr><td><label>Nationality</label></td>
+            <td><select name="nationality" >
+                <option value="select">Select</option>
+                <option value="indian">Indian</option>
+                <option value="australian">Australian</option>
+                <option value="brazilian">Brazilian</option>
+                <option value="chinese">Chinese</option>
+                <option value="french">French</option>
+                <option value="irish">Irish</option>
+                <option value="srilankan">Sri Lankan</option>
+            </select></td>
+            </tr>
+            <tr><td><label>Address:</label></td><td> <input type="text" name="address"/></td></tr>
+            <tr><td><label>Religion</label></td>
+                <td><select name="religion">
+                    <option value="select">Select</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="muslim">Muslim</option>
+                    <option value="sikh">Sikh</option>
+                    <option value="jain">Jain</option>
+                    <option value="christan">Christan</option>
+                </select></td>
+                <td><label>Category</label></td>
+                <td><select name="category">
+                    <option value="select">Select</option>
+                    <option value="general">General</option>
+                    <option value="ews">EWS</option>
+                    <option value="bc">Backward</option>
+                    <option value="ebs">Extremely Backward</option>
+                    <option value="sc">Schedule Caste</option>
+                    <option value="st">Schedule Tribe</option>
+                </select></td>
+            </tr>
+            <tr><td><label>Physical Problem/Disability(if any):</label></td><td> <input type="text" name="pd"/></td></tr>
+            <tr><td><input type="Reset"/></td> <td><input type="Submit"/></td></tr>
+
+            </tbody>
+        </table>
+        </form>
+    </body>
+</html>
